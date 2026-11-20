@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e0e0e0;
+  font-family: "Carlito", "Calibri", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+  color: #222;
+}
+
+.cv-container {
+  width: 794px;
+  min-height: 1123px;
+  background-color: #ffffff;
+  display: flex;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 34%;
+  background-color: #2e3b4e;
+  color: #ffffff;
+  padding: 45px 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-pic-wrapper {
+  width: 185px;
+  height: 185px;
+  margin: 0 auto 24px auto;
+  border-radius: 50%;
+  border: 2px solid #8fa1b5;
+  overflow: hidden;
+  background-color: #b8d0d8;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+}
+
+.name {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.contact-list {
+  list-style: none;
+  margin-bottom: 32px;
+  padding-left: 5px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 13.5px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.contact-list i {
+  width: 26px;
+  font-size: 17px;
+  color: #9bb0c9;
+  margin-right: 12px;
+  text-align: center;
+}
+
+.sidebar-section {
+  margin-bottom: 28px;
+}
+
+.sidebar-title {
+  font-size: 17px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #d0d7de;
+  margin-bottom: 14px;
+}
+
+.sidebar-list {
+  list-style-type: disc;
+  padding-left: 22px;
+}
+
+.sidebar-list li {
+  font-size: 13.5px;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.main-content {
+  width: 66%;
+  padding: 48px 38px 40px 34px;
+  position: relative;
+}
+
+.top-right-decor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  height: 20px;
+  background-color: #2e3b4e;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
+}
+
+.top-right-decor::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 14px;
+  height: 200px;
+  background-color: #2e3b4e;
+}
+
+.content-section {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+  color: #111;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #2e3b4e;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.summary-text {
+  font-size: 13.5px;
+  font-style: italic;
+  line-height: 1.48;
+  color: #222;
+}
+
+.job-item {
+  margin-bottom: 18px;
+}
+
+.job-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  font-style: italic;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.job-company,
+.job-date {
+  font-size: 13px;
+  font-style: italic;
+  color: #333;
+  line-height: 1.35;
+}
+
+.job-date {
+  margin-bottom: 10px;
+}
+
+.job-duties {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.job-duties li {
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.42;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.edu-item {
+  margin-bottom: 14px;
+}
+
+.edu-school {
+  font-size: 14.5px;
+  font-weight: 700;
+  font-style: italic;
+  color: #111;
+}
+
+.edu-date,
+.edu-degree {
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.4;
+  color: #222;
+}
+
+@media print {
+  body {
+    background: none;
+    padding: 0;
+  }
+  .cv-container {
+    box-shadow: none;
+    width: 100%;
+    min-height: auto;
+  }
+}
